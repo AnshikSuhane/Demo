@@ -1,0 +1,122 @@
+<html>
+    <head><title>the feedback form</title>
+    <style>
+        body {
+            background-color:red; 
+            font-size: arial,sans-serif;
+        }
+        .container {
+        height:800px;
+        width:500px;
+        border:2px solid rgb(22, 18, 18);
+        background-color: whitesmoke;
+        margin: 100px auto;
+        padding: 20px;
+        border-radius: 10%;
+        box-shadow:20px rgba(0 0 0 0.2);
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color:black;
+            margin-bottom: 20px;
+        
+        }
+        select{
+            margin-left: 20px;
+            
+        }
+        label{
+            display:contents;
+            margin-left:5px;
+            color:black;
+            
+        }
+        input[type="text"],
+        input[type="Email"],
+        input[type="password"],
+        input[type="link"],
+        textarea,input[type=number]{
+            width:100%;
+            margin-left: 20px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        input[type="checkbox"]{
+            margin-right: 10px;
+        }
+        input[type="Radio"]{
+            margin-right:10px;
+        }
+        button[type="Submit"]{
+        background-color: green;
+            color: #fff;
+            padding: 10px 20px;
+            border :none;
+            border-radius: 5px;
+            cursor: pointer;
+            display:block;
+            margin:auto;
+        }
+        button[type="Submit"]:hover{
+            background-color:#45a049;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1><i>Feedback Form</i></h1>
+            
+            <form>
+                <label for="feedback Type">Feedback Type:</label><br>
+
+                <select name="feedback Type" id="FeedbackType">
+                        <option value="suggestion">Suggestion</option>
+                        <option value="complaints">Complaints</option>
+                        <option value="praises">compliment</option>
+                </select>
+                <br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message"name="message" rows="5" placeholder="Type your Message"></textarea><br><br>
+                <label for="Rating">Website Rating:</label><br>
+                <input type="Radio" id ="Ratingexcellent" name="Rating" value="Excellent">
+                <label for="Ratingexcellent">Excellent</label>
+                <input type="Radio" id="RatingGood" name =Ratingexcellent value="Good">
+                <label for="RatingGood">Good</label>
+                <input type="Radio" id="RatingAverage" name =RatingGood value="Average">
+                <label for="RatingAverage">Average</label>
+                <input type="Radio" id="RatingPoor" name="RatingGood" value="Poor">
+                <label for="RatingPoor">Poor</label>
+                <br><br>
+
+
+                <label for="Age">Age (10-100):</label><br>
+                <input type="number" id="Age" name ="Age" min="10" max="100" placeholder="Age"><br>
+                <br>
+                
+                <label for="EmailID">Email:</label><br>
+                <input type="email"id="email"name="email"placeholder="Type Your Email">
+                <br><br>
+                
+                
+                <label for="password">Password</label><br>
+                <input type="password" id="password"name="password"placeholder="Type Password"requried minlength="8">
+                <br><br>
+                
+                
+                <label for="urlwebsite">URL Website (optional):</label><br>
+                <input type="link" id="url website" name="url website"placeholder="URL SITE">
+                
+                
+                <br><br>
+                <label for="checkbox"> Terms and Condition</label><br>
+                <input type="checkbox" id="checkbox"name="checkbox"requried>
+                <label for="termsAndConditions">I agree to the terms and conditions.</label>
+                <br><br>
+
+                <button type="Submit">Submit</button>
+            </form>
+            
+    </div>
+    </body>
+</html>
