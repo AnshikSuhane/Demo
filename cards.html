@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cards with Hover Effect</title>
+    <style>
+         *{
+            background-color: #0f0f0f;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .card {
+            width: 150px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .card:hover {
+            opacity: 0.7;
+        }
+
+        .card:not(:hover) {
+            opacity: 0.9;
+        }
+        #cord{
+            color:#9b146e;
+            text-align: center;
+            padding:0;
+            margin: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cord">Card</h1>
+    <div class="cards">
+        <div class="card" style="background-color: yellow;"></div>
+        <div class="card" style="background-color: pink;"></div>
+        <div class="card" style="background-color: red;"></div>
+        <div class="card" style="background-color: green;"></div>
+    </div>
+</body>
+</html>
