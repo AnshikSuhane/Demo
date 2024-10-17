@@ -1,0 +1,223 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Pricing</title>  
+  <style>  
+    body {  
+      background-color: #181818;  
+      color: #fff;  
+      font-family: sans-serif;  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      min-height: 100vh;  
+      padding: 0;  
+      margin: 0;  
+    }  
+
+    .container {  
+      display: flex;  
+      gap: 50px;  
+      background-color: #181818;  
+      padding: 50px;  
+      border-radius: 10px;  
+    }  
+
+    .pricing-box {  
+      background-color: #282828;  
+      padding: 30px;  
+      border-radius: 10px;  
+    }  
+
+    h1 {  
+      font-size: 3em;  
+      margin-bottom: 20px;  
+    }  
+
+    h2 {  
+      font-size: 2em;  
+      margin-bottom: 10px;  
+    }  
+
+    p {  
+      line-height: 1.5;  
+      margin-bottom: 20px;  
+    }  
+
+    .features {  
+      display: flex;  
+      flex-direction: column;  
+      gap: 10px;  
+    }  
+
+    .feature {  
+      display: flex;  
+      align-items: center;  
+      gap: 10px;  
+    }  
+
+    .feature i {  
+      font-size: 1.5em;  
+    }  
+
+    .button {  
+      background-color: #805ad5;  
+      color: #fff;  
+      padding: 15px 30px;  
+      border: none;  
+      border-radius: 5px;  
+      cursor: pointer;  
+      transition: background-color 0.3s ease;  
+    }  
+
+    .button:hover {  
+      background-color: #6b46c1;  
+    }  
+
+    .switch {  
+      position: relative;  
+      display: inline-block;  
+      width: 60px;  
+      height: 34px;  
+    }  
+
+    .switch input {  
+      opacity: 0;  
+      width: 0;  
+      height: 0;  
+    }  
+
+    .slider {  
+      position: absolute;  
+      cursor: pointer;  
+      top: 0;  
+      left: 0;  
+      right: 0;  
+      bottom: 0;  
+      background-color: #ccc;  
+      -webkit-transition: .4s;  
+      transition: .4s;  
+      border-radius: 34px;  
+    }  
+
+    .slider:before {  
+      position: absolute;  
+      content: "";  
+      height: 26px;  
+      width: 26px;  
+      left: 4px;  
+      bottom: 4px;  
+      background-color: white;  
+      -webkit-transition: .4s;  
+      transition: .4s;  
+      border-radius: 50%;  
+    }  
+
+    input:checked + .slider {  
+      background-color: #2196F3;  
+    }  
+
+    input:focus + .slider {  
+      box-shadow: 0 0 1px #2196F3;  
+    }  
+
+    input:checked + .slider:before {  
+      -webkit-transform: translateX(26px);  
+      -ms-transform: translateX(26px);  
+      transform: translateX(26px);  
+    }  
+
+    /* Rounded sliders */  
+    .slider.round {  
+      border-radius: 34px;  
+    }  
+
+    .slider.round:before {  
+      border-radius: 50%;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <div class="container">  
+    <div class="pricing-box">  
+      <h2>Pro</h2>  
+      <p>Includes everything you need for your professional website</p>  
+      <h1>$20</h1>  
+      <p>/ Site / Month (billed annually)</p>  
+      <div class="switch">  
+        <input type="checkbox" id="bill-toggle">  
+        <label for="bill-toggle">  
+          <span class="slider round"></span>  
+        </label>  
+        <span style="margin-left: 10px;">Bill Monthly</span>  
+        <span style="margin-left: 10px;">Bill Yearly</span>  
+      </div>  
+      <div class="features">  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Custom Domains  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          GDPR Solution  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Beautiful Site Design  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Super-Fast Hosting  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Analytics  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Custom Forms  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Blogging  
+        </div>  
+      </div>  
+      <div class="features">  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Password Protection  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Multilingual Sites  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          User Management  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Unlimited Pages  
+        </div>  
+        <div class="feature">  
+          <i class="fas fa-check"></i>  
+          Unlimited Team Members  
+        </div>  
+      </div>  
+      <button class="button">Get Started →</button>  
+    </div>  
+    <div class="pricing-box">  
+      <h2>Basic</h2>  
+      <p>Publish your site for free with almost all pro features.</p>  
+      <h1>Free</h1>  
+      <p>Everything from Pro, except:</p>  
+      <ul>  
+        <li>No Custom Domains</li>  
+        <li>"Made with Umso" Branding</li>  
+      </ul>  
+      <p>No credit card required</p>  
+      <button class="button">Get Started</button>  
+    </div>  
+  </div>  
+</body>  
+</html>
