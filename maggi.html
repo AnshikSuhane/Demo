@@ -4,8 +4,289 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        
+            background-color: antiquewhite;
+        
+        }
+        .fullbox{
+             width: 100%;
+             height: auto;
+             
+             display: flex
+        }
+    .outerbox{
+        display: flex;
+        height: 100%;
+        width: 100px; 
+       background-color: rgb(98, 161, 216);
+       
+         flex-direction: column
+         ;
+         
+        
+    }
+             .outerbox>div{
+               
+                height: 150px;
+                width: 100px;
+    
+                background-color: rgb(225, 212, 212);
+              
+                /* border: 2px solid black */
+             }
+             #maggi{
+                height: 50px;
+                width: 100px;
+               margin-left: 80px;
+               margin-top: 20px;
+             }
+         .outerbox>div:nth-child(1){
+        background-color: rgb(210, 210, 66);
+        }
+          
+           #icon{
+        flex-direction: column;
+        height: 50px;
+        width: 50px;
+       margin-left: 20px;
+       margin-top: 5px;
+       }
+      .smalldiv{
+    
+        height: 50%;
+        width: 100%;
+       
+     padding-left: 5px;
+    padding-top: 4px;
+    
+      }
+    
+      /* navbar */
+    
+    
+      .bodybox{
+           height: 700px;
+           width: 500px;
+           
+           display: flex;
+           flex-direction: column;
+           padding-left: 50px;
+        
+           margin-left: 100px;
+           margin-top: 50px;
+           
+     }
+     
+     .bodybox>p{
+        font-size: 52px;
+     }
+     .buttondiv{
+        height: 30;
+        width: 230;
+        border: 1px solid white;
+        display: flex;
+      
+        margin: 0;
+        border-radius: 3px;
+       margin-top: 20px;
+    }
+      button{
+        height: 30px;
+        width: 200px;
+    background-color: rgb(106, 135, 237);
+    
+    font-size: 15;
+    
+    border: none;
+    }
+    .facebook{
+        height: 30px;
+        width: 200px;
+    background-color: rgb(106, 135, 237);
+    
+    font-size: 15;
+    
+    border: none;
+    }
+    .google{
+        height: 30px;
+        width: 200px;
+    background-color: rgb(255, 255, 255);
+    
+    font-size: 15;
+    
+    border: none;
+    }
+    .registration{
+        height: 80px;
+        width: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 25;
+    color: white;
+    border: none;
+    }
+    
+    .buttondiv>img{
+           height: 30px;
+           width: 30px;
+    }
+    
+    button:hover{
+        background-color: rgb(65, 68, 236);
+    }
+    
+    button.registration:hover{
+        background-color: yellow;
+        color: black;
+    }
+    
+    .inputdiv>input{
+           height: 20%;
+           width: 428px;
+           font-size: 18;
+         padding: 40px;
+          text-align: left   ;
+    }
+    .inputdiv{
+        height: 200px;
+        width: 480;
+       
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    }
+    ul>li{
+        padding-top: 10px
+    }
+    
+     </style>
+    
+    
+    
+    
+    
 </head>
 <body>
     
+    <!-- navbar -->
+     <div class="fullbox">
+        <div class="outerbox">
+           
+            
+            <div>
+               <img id="maggi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXrvFCCGuWkqQJ6pJ1AO-G8LQR3R857_Hd2Q&s"/>
+               
+            </div>
+    
+            <div>
+                <div class="smalldiv">
+                        <img id="icon" src="https://cdn-icons-png.flaticon.com/128/648/648623.png"/>
+                </div>
+                
+                 <div class="smalldiv">
+                <h3 style="padding-left: 15px;">Recipies</h3>
+                 </div>
+            </div>
+    
+            <div>
+                <div class="smalldiv">
+    
+                    <img id="icon" src="https://cdn-icons-png.flaticon.com/128/4128/4128526.png"/>
+                </div>
+                <div class="smalldiv">
+                    <h3 style="padding-left: 15px;">Recipies</h3>
+                                </div>
+            </div>
+            <div>
+                <div class="smalldiv">
+    
+                    <img id="icon" src="https://cdn-icons-png.flaticon.com/128/809/809564.png"/>
+                </div>
+                <div class="smalldiv">
+                    <h3 style="padding-left: 15px;">Menu</h3>
+                                </div>
+               
+               
+            </div>
+            <div>
+                <div class="smalldiv">
+    
+                    <img id="icon" src="https://cdn-icons-png.flaticon.com/128/54/54481.png"/>
+                </div>
+                <div class="smalldiv">
+                    <h3 style="padding-left: 15px;">Search</h3>
+                                </div>
+                
+               
+            </div>
+            <div>
+                <div class="smalldiv">
+    
+                    <img id="icon" src="https://cdn-icons-png.flaticon.com/128/6681/6681235.png"/>
+                </div>
+                <div class="smalldiv">
+                    <h3 style="padding-left: 15px;">Login</h3>
+                                </div>
+                
+             
+              
+            </div>
+    
+    
+    
+        </div>
+        <!-- other part -->
+        
+            <div class="bodybox">
+             
+                <p> <b>My Maggi</b><br> Welcome Back</p>
+    
+                <div class="buttondiv">
+                   <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png"/>
+                <button class="facebook">
+                   <b>Sign in with Facebook</b> 
+                </button>
+            </div>
+    
+            <div class="buttondiv">
+                <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png"/>
+             <button class="google">
+                <b>Sign in with Facebook</b> 
+             </button><br>
+         </div>
+          
+        <div class="inputdiv">
+          <lable for="mail"> E-mial</lable>
+           <input type="email" id="mail"/><br>
+         
+          <lable for="pass">Password</lable>
+          <input type="password" id="pass"  />
+        </div>
+         <p style="font-size: 20 ; color: gray;padding-left: 48%;padding-top: 10px;"> <u> Forget your password ?</u></p>
+    
+    
+            </div>
+    
+            <div class="bodybox">
+              <p><b>Not Registration Yet</b></p>
+              <button class="registration"> >  Register</button>
+              <h1 style="padding-top: 20px;"> Join Maggi Today!</h1>
+              <ul style="font-size: 20;"    >
+                <li>Your personal Newspaper<br> with exciting recipies and<br> idias</li>
+                <li>personalize your newspaper to your preferences</li>
+                <li>Get to know about yur maggi products</li>
+                <li>skjdvbib</li>
+              </ul>
+            </div>
+    
+         <!-- closing off full div  -->
+        </div>
+           
+     </body>
 </body>
 </html>
