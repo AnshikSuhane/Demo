@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #border{
+            height: 500px;
+            width: 300px;
+            border: 2px solid black;
+        }
+        #list1 > .red {
+            color: red;
+        }
+        #list2 > .black {
+            color: black;
+        }
+        #list2 li::marker{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="border">
+        
+        <ul id="list1">
+            <li class="red">item-1</li>
+            <li class="black">item-2</li>
+            <li  class="red">item-3</li>
+            <li class="black">item-4</li>
+            <li  class="red">item-5</li>
+            <li class="black">item-6</li>
+            <li  class="red">item-7</li>
+            <li class="black">item-8</li>
+            <li  class="red">item-9</li>
+            <li class="black">item-10</li>
+        </ul>
+        <ul id="list2">
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+            <li>item-9</li>
+            <li>item-10</li>
+        </ul>
+    </div>
+</body>
+</html>
