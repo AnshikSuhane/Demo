@@ -1,223 +1,311 @@
-<!DOCTYPE html>  
-<html>  
-<head>  
-  <title>Pricing</title>  
-  <style>  
-    body {  
-      background-color: #181818;  
-      color: #fff;  
-      font-family: sans-serif;  
-      display: flex;  
-      justify-content: center;  
-      align-items: center;  
-      min-height: 100vh;  
-      padding: 0;  
-      margin: 0;  
-    }  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding:0px;
+      margin: 0;
+      background-color: rgb(16, 14, 14);
+      align-items: center;
+      justify-content: center;
+    }
+    #one-box{
+    width: 100%;
+    height: 45px;
+    border: none;
+    
+  }
+  #one-box p{
+    padding-left:50px ;
+    color: rgb(67, 67, 243);
+    text-transform: uppercase;
+    font-size:40px;
+  }
+  .two-box {
+    height: 100px;
+    width: 100%;
+    border:none;
+    align-items: center;
+    display: block;
+    display: inline;
+    }
+    .two-box p{
+      padding-left: 50px;
+      font-size: 50px;
+      color: white;
+      padding-bottom: 50px;
+    }
+    .switch{
+      position:relative;
+      display: inline-block;
+      width: 50px;
+      height: 30px;
+    }
+    .switch >input{
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;left: 0;right: 0;bottom: 0;
+      background-color: #ccc;
+      -webkit-transition:.4s;
+      transition: .4s;
+    }
+    .slider:before{
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom:4px;
+      background-color:white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    input:focus+.slider{
+      box-shadow:0,0,1px #2196f3;
+    }
+    input:checked+.slider:before{
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    .slider.round{
+      border-radius: 32px;
+    }
+    .slider.round:before{
+      border-radius: 50%;
+    }
+    #big-box{
+      height: 800px;
+      width: 1010px;
+      border: 1px solid white;
+      margin-left: 50px;
+      align-items: baseline;
+    }
+    .toogle{
+      height: auto ;
+      width: 100%;
+      border: none;
+      justify-content: space-between;
+      display: flex;
+      color: #ccc;
+      align-items: baseline;
+    }
+    .pro{
+      height: 50px;
+      width: 100px;
+      border: none;
+      
+    }
+    .bill{
+      height:50px;
+      display: flex;
+      width: 500px;
+      border: none;
+      justify-content: end;
+    }
+    .child{
+      height:auto;
+      width: 400px;
+      justify-content: space-evenly;
+      border: none;
+      align-items: center;
+      display: flex;
+      
+    }
+    .child > h1 {
+      color:#ccc;
+      padding-left:20px;
+      font-size:70px;
+    }
+    .child p{
+      color: #ccc;
+    }
+    .small{
+      height: 350px;
+      width: 1000px;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+    .first{
+      height: 350px;
+      width: 400px;
+      border: none;
+    }
 
-    .container {  
-      display: flex;  
-      gap: 50px;  
-      background-color: #181818;  
-      padding: 50px;  
-      border-radius: 10px;  
-    }  
+    .first ul{
+      
+      list-style: none;
+      padding: 20px;
+    }
+    
+    .first li{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828517.png");  
+    background-repeat: no-repeat;  
+    background-size: 30px 30px; 
+    padding-left: 50px;
+    color:#ccc;
+    font-size:30px;
+    }
+    .second{
+      height: 350px;
+      width: 450px;
+      border: none;
+    }
+    
+    .second ul{
+    
+      list-style: none;
+      padding: 20px;
+    }
+    
+    .second li{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828517.png");  
+    background-repeat: no-repeat;  
+    background-size: 30px 30px; 
+    padding-left: 50px;
+    color:#ccc;
+    font-size:30px;
+    }
+    #get{
+      width: 800px;
+      margin-top: 100px;
+      margin-left: 100px; 
+      border-radius: 20px;
+      font-size: 50px;
+      background-color: rgb(84, 84, 185);
+      box-shadow: rgba(255, 255, 255, 0.921) 0px 7px 29px 0px;
+      
+    }
+    #big{
+      height:800px;
+      width:100%;
+      border:none;
+      display: flex;
+    
+    }
+    #big .box{
+      height:700px;
+      width:700px;
+      border: 2px solid #ccc;
+      margin-top: 100px;
+      
+    }
+    .box > .base{
+      height:auto;
+      width: 100%;
+      /* border: 2px solid #ccc; */
+      color: #ccc;
+      padding-left: 25px ;
+    }
+    .base  h1{
+      font-size:50px;
+    }
+    .base  p{
+      font-size:35px;
+    }
+    .base ul {
+      list-style-type:none;
+      font-size: 25px;
+    }
+    .start{
+      width: 500px;
+      margin-top: 20px;
+      margin-left: 50px; 
+      border-radius: 20px;
+      font-size: 50px;
+      background-color: rgb(47, 45, 45);
+      color: white;
+      /* box-shadow: rgba(255, 255, 255, 0.921) 0px 7px 29px 0px; */
+    }
 
-    .pricing-box {  
-      background-color: #282828;  
-      padding: 30px;  
-      border-radius: 10px;  
-    }  
 
-    h1 {  
-      font-size: 3em;  
-      margin-bottom: 20px;  
-    }  
+    </style>  `
+</head>
+<body>
+  <div id="one-box">
+    <p>Pricing</p>
+  </div>
+  
+  <div class="two-box">
+    <p>One Price for Everything</p>
+    <p> The simplest pricing in the industry. You won't need a calculator for this. </p>
+  </div>
+  <div>
+    <div id="big">
+      <div id="big-box">
+        <div class="toogle">
+          
+          <div class="pro">
+            <p style="font-size:50px; padding-left:20px; margin-top: 10px;">Pro</p>
+          </div>
+          
+          <div class="bill">
+            <p style="font-size: 18px;">Bill Monthly</p>
+            <label class="switch" style="margin:10px; align-items: baseline;">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <p style="font-size: 18px;">Bill Yearly</p>
+          </div>
+        </div>
+        <div class="child">
+          <h1>$20</h1>
+          <p>/ Site / Month (billed annually) </p>
+        </div>
+        <div class="small">
+          <div class="first">
+            
+            <ul>
+              <li>Custom Domain</li>
+              <li>GDPR Solution</li>
+              <li>Beautifull Site Design</li>
+              <li>Super-Fast Hosting</li>
+              <li>Analytics</li>
+              <li>Custom Form</li>
+              <li>Blogging</li>
+            </ul>
+            
+          </div>
+          <div class="second">
+            <ul>
+              <li>Password Protection</li>
+              <li>Multilingual Site</li>
+              <li>User Management</li>
+              <li>Unlimited Pages</li>
+              <li>Unlimited Team Members</li>
+            </ul>
+          </div>
+        </div>
+        <div></div>
+        <button id="get">Get Started</button>
+      </div>
+      <div class="box">
+        <div class="base">
+          <h1>Basic</h1>
+          <p>Publish your site for freewith almost all pro <br>features</p>
+        </div>
+        <div class="base">
+          <h2><strong>Free</strong></h2>
+          <p>Everything from Pro, except:</p>
+          <ul>
+            <li>_ No Custom Domains</li>
+            <li>_ "Made with Umso" Branding</li>
+          </ul>
+          <p>NO cedit card required</p>
+          <button class="start">Get Started</button>
+        </div>
+      </div>
+    </div>
 
-    h2 {  
-      font-size: 2em;  
-      margin-bottom: 10px;  
-    }  
-
-    p {  
-      line-height: 1.5;  
-      margin-bottom: 20px;  
-    }  
-
-    .features {  
-      display: flex;  
-      flex-direction: column;  
-      gap: 10px;  
-    }  
-
-    .feature {  
-      display: flex;  
-      align-items: center;  
-      gap: 10px;  
-    }  
-
-    .feature i {  
-      font-size: 1.5em;  
-    }  
-
-    .button {  
-      background-color: #805ad5;  
-      color: #fff;  
-      padding: 15px 30px;  
-      border: none;  
-      border-radius: 5px;  
-      cursor: pointer;  
-      transition: background-color 0.3s ease;  
-    }  
-
-    .button:hover {  
-      background-color: #6b46c1;  
-    }  
-
-    .switch {  
-      position: relative;  
-      display: inline-block;  
-      width: 60px;  
-      height: 34px;  
-    }  
-
-    .switch input {  
-      opacity: 0;  
-      width: 0;  
-      height: 0;  
-    }  
-
-    .slider {  
-      position: absolute;  
-      cursor: pointer;  
-      top: 0;  
-      left: 0;  
-      right: 0;  
-      bottom: 0;  
-      background-color: #ccc;  
-      -webkit-transition: .4s;  
-      transition: .4s;  
-      border-radius: 34px;  
-    }  
-
-    .slider:before {  
-      position: absolute;  
-      content: "";  
-      height: 26px;  
-      width: 26px;  
-      left: 4px;  
-      bottom: 4px;  
-      background-color: white;  
-      -webkit-transition: .4s;  
-      transition: .4s;  
-      border-radius: 50%;  
-    }  
-
-    input:checked + .slider {  
-      background-color: #2196F3;  
-    }  
-
-    input:focus + .slider {  
-      box-shadow: 0 0 1px #2196F3;  
-    }  
-
-    input:checked + .slider:before {  
-      -webkit-transform: translateX(26px);  
-      -ms-transform: translateX(26px);  
-      transform: translateX(26px);  
-    }  
-
-    /* Rounded sliders */  
-    .slider.round {  
-      border-radius: 34px;  
-    }  
-
-    .slider.round:before {  
-      border-radius: 50%;  
-    }  
-  </style>  
-</head>  
-<body>  
-  <div class="container">  
-    <div class="pricing-box">  
-      <h2>Pro</h2>  
-      <p>Includes everything you need for your professional website</p>  
-      <h1>$20</h1>  
-      <p>/ Site / Month (billed annually)</p>  
-      <div class="switch">  
-        <input type="checkbox" id="bill-toggle">  
-        <label for="bill-toggle">  
-          <span class="slider round"></span>  
-        </label>  
-        <span style="margin-left: 10px;">Bill Monthly</span>  
-        <span style="margin-left: 10px;">Bill Yearly</span>  
-      </div>  
-      <div class="features">  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Custom Domains  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          GDPR Solution  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Beautiful Site Design  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Super-Fast Hosting  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Analytics  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Custom Forms  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Blogging  
-        </div>  
-      </div>  
-      <div class="features">  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Password Protection  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Multilingual Sites  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          User Management  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Unlimited Pages  
-        </div>  
-        <div class="feature">  
-          <i class="fas fa-check"></i>  
-          Unlimited Team Members  
-        </div>  
-      </div>  
-      <button class="button">Get Started →</button>  
-    </div>  
-    <div class="pricing-box">  
-      <h2>Basic</h2>  
-      <p>Publish your site for free with almost all pro features.</p>  
-      <h1>Free</h1>  
-      <p>Everything from Pro, except:</p>  
-      <ul>  
-        <li>No Custom Domains</li>  
-        <li>"Made with Umso" Branding</li>  
-      </ul>  
-      <p>No credit card required</p>  
-      <button class="button">Get Started</button>  
-    </div>  
-  </div>  
-</body>  
+</body>
 </html>
