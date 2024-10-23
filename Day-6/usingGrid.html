@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height: 500px;
+            width: 700px;
+            margin: 400px;
+            grid-template-columns: repeat(1fr,1fr);
+            grid-template-rows: repeat(1fr,2fr);
+            background-color:black;
+            text-align: center;
+            font-size: 100px;
+            font-weight: 600;
+        }
+        .red{
+            background-color: red;
+            grid-row-start: 1;
+            grid-column-end:span 2;            
+        }
+        .blue{
+            background-color: blue;
+
+        }
+        .green{
+            background-color: green;
+        }
+        .pink{
+            background-color:pink;
+            grid-row-start: 1;
+            grid-row-end: 2 span;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">4</div>
+        <div class="blue">1</div>
+        <div class="green">5</div>
+        <div class="pink">6</div>
+    </div>
+</body>
+</html>

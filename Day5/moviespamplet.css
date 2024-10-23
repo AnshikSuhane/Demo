@@ -1,0 +1,44 @@
+#big-box{
+    height: 1100px;
+    width:1000px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.first-box{
+    height: 450px;
+    width: 296px;
+    border: 2px solid black;
+    margin: 10px;
+    gap: 50px;
+    
+}
+
+.first-2-box{
+    height: 100px;
+    width: 100%;
+    border:none ;
+    /* padding: 10px; */
+}
+.first-2-box > h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.first-2-box > h5{
+    padding-right: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.first-2-box > button{
+    background-color: rgb(150, 234, 234);
+    margin-left:80px;
+    padding-left: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}

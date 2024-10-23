@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+        margin: 0;
+        }
+        #extra{
+            height: 50px;
+            width: 100%;
+            border: none;
+
+        }
+        #extra  p{
+            text-align: center;
+            align-items: center;
+            justify-content:center;
+            font-size: 20px;
+            text-transform: uppercase;
+
+        }
+        #nav{
+            height: 50px;
+            display: flex;
+            width:100%;
+            border: 2px solid black;
+            background-color: rgb(39, 36, 36);
+        }
+        #left{
+            height: 100%;
+            width:60%;
+            display: flex;
+            justify-content:space-around;
+        }
+        #left img{
+            height: 40px;
+        }
+        #left a{
+            color: white;
+            text-align: center;
+            justify-content: baseline;
+            font-size: 20px;
+        }
+        #right{
+            height: 100%;
+            width:40%;
+            border: none;
+            display: flex;
+            justify-content:space-around;
+        }
+        #right button{
+            padding: 10px;
+            justify-content: center;
+            padding-left: 40px;
+            padding-right:40px;
+            font-size: 20px;
+        }
+        #right img{
+            background-color:white; 
+            border-radius: 50%;
+            height: 80%;
+            align-items: center;
+
+        }
+        #right img:hover{
+            background-color:rgb(208, 204, 197);
+            border-radius:40%;
+        }
+        #first {
+            height:500px;
+            width: 100%;
+            border: 2px solid black;
+        }
+        #first img{
+            width: 100%;
+
+        }
+        #axis{
+            height:70px;
+            width: 100%;
+            border: 10 solid black;
+            background-color: gray;
+        }
+        #axis .left{
+            height: 60px;
+            width: 100%;
+            border: 10px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .left img{
+            margin-right: 100px;
+        }
+
+        .festive{
+            height: 40px;
+            width: 100%;
+            border: 2px solid black;
+        }
+        .festive p{
+            text-align: center;
+
+        }
+        .circle{
+            display: grid;
+            height: 250px;
+            width: 100%;
+            grid-template-columns: repeat(6,1fr);
+            padding-left: 100px;
+            /* border: 2px solid black; */
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            color: rgb(156, 156, 52);
+
+        }
+        .circle .st{
+            background-color:brown ;
+            height: 150px;
+            width: 150px;
+            border-radius:50%;
+            justify-content: space-around;
+            border: 2px solid black;
+        }
+        .st img {
+            padding-top: 200px;
+            position:absolute;
+            bottom: 50px;
+            gap: 10px;
+            width: 50px;
+        }
+        .st p{
+            text-align: center;
+            padding-top: 50px;
+            font-size: 20px;
+        }
+        #spotlight{
+            height: 500px;
+            width:80%;
+            border: 12px solid black;
+            margin-top: 500px;
+            margin-left: 200px;
+            display: flex;
+            gap: 20px;
+            
+        }
+        #spotlight >.shoes1{
+            height: 70%;
+            width:300px;
+            border: 2px solid black;
+            margin-top:100px;
+            margin-right: 50px;
+        }
+        #img img {
+            height:125px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div id="extra">
+            <p>Extra 5% Discount and free shipping on all online payment</p>
+        </div>
+    <nav id="nav">
+        <div id="left">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.2Y6HLweE8tdBpbnBHoNmTQHaFm&pid=Api&P=0&h=220" alt="">
+            <a href="#">New</a>
+            <a href="#"> Women</a>
+            <a href="#"> Mens</a>
+            <a href="#"> Kids</a>
+            <a href="#">Motor sport</a>
+            <a href="#"> FentyxPuma</a>
+            <a href="#">Collabration </a>
+            <a href="#"> Sports</a>
+            <a href="#"> Sales</a>
+            <a href="#">Bulk saving</a>
+        </div>
+        <div id="right">
+            <button>Search</button>
+            <img src="	https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="">
+            <img src="	https://cdn-icons-png.flaticon.com/512/649/649931.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/20/20079.png" alt="">
+        </div>
+    </nav>
+
+    <div id="first">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5AWZgS1CEDAdFRlFWmqib8d6FHHowSmqHBvbWwovbimrFj7Fje7ilxt8hLZDRuvrKP3X_mt8R2emzVrp1Ml8TedyHOzT-5bnXuRVpibVCXLlbFi83-gk7eiCLtFkg2VgCCUyCUg4aUHPYNGSmg60_yURjalkGs_Cudo2JL6X2DKMZ8wEHJGovXTuTvg/s3508/Front,%20GWP.jpg" alt="" style="height: 500px; width: 100%;">
+    </div>
+    <div id="axis">
+        <div class="left">
+            <img src="https://zeevector.com/wp-content/uploads/LOGO/Axis-Bank-Logo-Vector-PNG.png" alt="" style="height: 60px; background-color: white; ">
+            <p><b>Extra 10% Cashback on axis bank credit card</b>
+            <br>(including all recently migrated cards)
+        <br> Min. purchase of $6999 with a max. cashback of $1000 T&Cs apply</p>
+            </div>
+    </div>
+    <div class="festive">
+        <p style="font-size: 40px;padding-top: 100px;">festive feels ,stylish Deals</p>
+        <p  style="font-size: 40px;">extra 20% off on Everything*</p>
+        <p  style="font-size: 40px;">Auto-applied at checkout | *Exclusion Apply</p>
+        <div class="circle">
+            <div class="st">
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/616/616493.png
+                " alt=""> -->
+                <p>New Styles <br>on Sales</p>
+            </div>
+            <div class="st">
+                <p>Running<br>Shoes</p>
+            </div>
+            <div class="st">
+                <p>New Sneaker</p>
+            </div>
+            <div class="st">
+                <p>winterWear</p>
+            </div>
+            <div class="st"> <p>T-shirt</p></div>
+            <div class="st"><p>FERRARI</p></div>
+        </div>
+    </div>
+    <!-- <div id="second">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5AWZgS1CEDAdFRlFWmqib8d6FHHowSmqHBvbWwovbimrFj7Fje7ilxt8hLZDRuvrKP3X_mt8R2emzVrp1Ml8TedyHOzT-5bnXuRVpibVCXLlbFi83-gk7eiCLtFkg2VgCCUyCUg4aUHPYNGSmg60_yURjalkGs_Cudo2JL6X2DKMZ8wEHJGovXTuTvg/s3508/Front,%20GWP.jpg" alt="" style="height: 300px; width: 100%;">
+    </div> -->
+    <div id="spotlight">
+        <h1>Puma Spotlight</h1>
+        <div class="shoes1">
+            <div id="img">
+                <img src="https://i5.walmartimages.com/asr/bbd3d695-d710-46e2-aead-209d34c83862_1.4090b008bed62090f2fa4f29eaa05ee6.jpeg" alt="">
+            </div>
+            <div id="conten">
+                <h3  style="padding-top: 50px;">PUMA Court Shatter Low Unisex Sneakers</h3>
+                <h2 style="color: red; padding-top: 8%;">$3,709</h3>
+                <s style="color: lightgrey;">$6,999</s>
+            </div>
+        </div>
+        <div class="shoes1">
+            <div id="img">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.Mr5deswQR_zA56RWI2jsGgHaHa&pid=Api&P=0&h=220" alt="">
+            </div>
+            <div id="conten">
+                <h3 style="padding-top: 50px;">caven 2.0 VTG Unisex Sneaker</h3>
+                <h2 style="color: red; padding-top: 100px;">$4,799</h3>
+                <s style="color: lightgrey;">$7,999</s>
+            </div>
+        </div>
+        <div class="shoes1">
+            <div id="img">
+                <img src="https://cdna.lystit.com/1200/630/tr/photos/dsw/e776e316/puma-WhiteTanBlue-Ever-Fs-Sneaker.jpeg" alt="">
+            </div>
+            <div id="conten">
+                <h3  style="padding-top: 50px;">porshe Leagcy caven 2.0 turbo unisex <br>Motorsport Sneaker</h3>
+                <h2 style="color: red; padding-top: 80px;">$4,899</h3>
+                <s style="color: lightgrey;">$6,999</s>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h1>SUPPORT</h1>
+            <div id="column">
+                <ul>
+                    <li>Contact Us</a></li>
+                    <li>promotion & sales</li>
+                    <li>Track Order</li>
+                    <li>Shoes care</li>
+                    <li>Tech glossary</li>
+                    <li> Inintate</li>
+                    <li>Cookies setting</li>
+                </ul>
+            </div>
+            <div id="column">
+                <ul>
+                    <li>FAQ</a></li>
+                    <li>My account</li>
+                    <li>Exchange & return Policy</li>
+                    <li>Privacy Policy </li>
+                    <li>term and condition</li>
+                    <li> Sneaker</li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
